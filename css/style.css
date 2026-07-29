@@ -1,10 +1,8 @@
-/* Base Setup & Scrollbar */
 body {
     background-color: #000000;
     color: #e5e5e5;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-    perspective: 1500px;
 }
 
 .font-changa { font-family: 'Changa', sans-serif; }
@@ -14,7 +12,6 @@ body {
 ::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: #ffffff; }
 
-/* Immersive Backgrounds */
 .bg-dot-pattern {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
     background-size: 32px 32px;
