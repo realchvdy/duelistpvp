@@ -1,0 +1,24 @@
+/* 3D Tilt Card Physics Engine Styling */
+.tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform;
+}
+.tilt-content {
+    transform: translateZ(30px);
+    transition: transform 0.4s ease;
+}
+.tilt-card:hover .tilt-content {
+    transform: translateZ(50px);
+}
+.glare {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1), transparent 60%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    mix-blend-mode: overlay;
+    z-index: 50;
+}
+.tilt-card:hover .glare { opacity: 1; }

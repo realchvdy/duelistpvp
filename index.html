@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuelistPvP | The Ultimate Hub</title>
+
+  <!-- Favicon Linkage -->
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    // Keeping Tailwind config in the head to initialize before body render
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { white: '#ffffff', black: '#000000', dark: '#050505', gray: '#141414', lightgray: '#262626' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Changa', 'sans-serif'],
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'float-fast': 'float 4s ease-in-out infinite',
+            'float-slow': 'float 8s ease-in-out infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'gradient-x': 'gradientX 8s linear infinite',
+            'shine': 'shine 4s cubic-bezier(0.25, 1, 0.5, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+              '50%': { transform: 'translateY(-15px) rotate(1deg)' },
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px) scale(0.98)' },
+              '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+            },
+            gradientX: {
+              '0%, 100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' },
+            },
+            shine: {
+              '0%': { left: '-100%', opacity: '0' },
+              '20%': { left: '100%', opacity: '1' },
+              '100%': { left: '100%', opacity: '0' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Modular CSS Imports -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="min-h-screen flex flex-col selection:bg-white selection:text-black">
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0"></div>
+  <div class="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900/20 via-[#000] to-[#000] pointer-events-none z-0"></div>
+
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 h-[5.5rem] flex items-center justify-between">
+      
+      <!-- Logo -->
+      <div class="flex items-center gap-4 cursor-pointer group tilt-card" onclick="switchTab('home')">
+        <div class="w-12 h-12 rounded-xl bg-[#0a0a0a] border border-neutral-800 flex items-center justify-center relative overflow-hidden transition-all duration-500 group-hover:border-white group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] tilt-content">
+          <i class="fa-solid fa-crosshairs text-xl text-white transition-transform duration-700 group-hover:rotate-180"></i>
+        </div>
+        <div class="tilt-content">
+          <div class="flex items-center gap-1.5">
+            <span class="font-changa font-extrabold text-2xl tracking-widest text-white drop-shadow-md">DUELIST</span>
+            <span class="text-[10px] font-black px-2 py-0.5 rounded bg-white text-black uppercase tracking-widest shadow-[0_0_10px_rgba(255,255,255,0.5)]">PvP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-9">
+        <button onclick="switchTab('home')" data-tab="home" class="nav-btn active text-xs font-bold tracking-[0.15em] uppercase">Home</button>
+        <button onclick="switchTab('codes')" data-tab="codes" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase flex items-center gap-1.5">Codes <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_5px_#10b981]"></span></button>
+        <button onclick="switchTab('updates')" data-tab="updates" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Updates</button>
+        <button onclick="switchTab('maps')" data-tab="maps" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Maps</button>
+        <button onclick="switchTab('community')" data-tab="community" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Community</button>
+        <button onclick="switchTab('resources')" data-tab="resources" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Resources</button>
+        <button onclick="switchTab('credits')" data-tab="credits" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Credits</button>
+        
+        <div class="w-px h-5 bg-neutral-800 mx-1"></div>
+        
+        <button onclick="switchTab('trading')" data-tab="trading" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase flex items-center gap-2 group/trade text-white">
+            <i class="fa-solid fa-arrow-right-arrow-left opacity-60 group-hover/trade:opacity-100 group-hover/trade:rotate-180 transition-all duration-500"></i> Trade
+        </button>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <div class="flex lg:hidden items-center gap-3">
+          <button onclick="switchTab('trading')" class="px-4 py-2 bg-white text-black text-[10px] font-black rounded-lg uppercase tracking-wider shadow-[0_0_10px_rgba(255,255,255,0.2)]">Trade</button>
+          <button onclick="toggleMobileMenu()" class="w-10 h-10 rounded-lg bg-[#0a0a0a] border border-neutral-800 flex items-center justify-center text-white hover:border-white transition-all">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-neutral-900 bg-[#000000]/95 backdrop-blur-xl absolute w-full left-0 shadow-2xl z-50">
+      <div class="flex flex-col p-4 gap-2">
+        <button onclick="switchTab('home')" class="text-left px-4 py-3 rounded-lg text-sm font-bold bg-white text-black">Home</button>
+        <button onclick="switchTab('codes')" class="text-left px-4 py-3 rounded-lg text-sm font-bold text-neutral-400 hover:bg-[#111] hover:text-white flex justify-between">Codes <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span></button>
+        <button onclick="switchTab('updates')" class="text-left px-4 py-3 rounded-lg text-sm font-bold text-neutral-400 hover:bg-[#111] hover:text-white">Updates</button>
+        <button onclick="switchTab('maps')" class="text-left px-4 py-3 rounded-lg text-sm font-bold text-neutral-400 hover:bg-[#111] hover:text-white">Maps</button>
+        <button onclick="switchTab('community')" class="text-left px-4 py-3 rounded-lg text-sm font-bold text-neutral-400 hover:bg-[#111] hover:text-white">Community</button>
+        <button onclick="switchTab('resources')" class="text-left px-4 py-3 rounded-lg text-sm font-bold text-neutral-400 hover:bg-[#111] hover:text-white">Resources</button>
+        <button onclick="switchTab('credits')" class="text-left px-4 py-3 rounded-lg text-sm font-bold text-neutral-400 hover:bg-[#111] hover:text-white">Credits</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 w-full relative z-10">
+    <!-- Tab sections remain identical to your source index.html -->
+    <!-- [Insert all your <section id="tab-home"> through <section id="tab-trading"> here] -->
+  </main>
+
+  <!-- Footer block remains identical to your source index.html -->
+  <!-- [Insert your <footer> here] -->
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
+
+  <!-- Modular JS Imports -->
+  <script src="js/data.js"></script>
+  <script src="js/title.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

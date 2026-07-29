@@ -1,0 +1,41 @@
+/* Premium Glassmorphism */
+.glass-nav {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel {
+    background: linear-gradient(145deg, rgba(10,10,10,0.9), rgba(0,0,0,1));
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* Interactive Filters */
+.bw-filter {
+    filter: grayscale(100%) contrast(1.1) brightness(0.7);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .bw-filter, .tilt-card:hover .bw-filter {
+    filter: grayscale(0%) contrast(1.05) brightness(1);
+    transform: scale(1.1) translateZ(10px);
+}
+
+/* Nav Underlines */
+.nav-btn { color: #737373; transition: all 0.3s ease; position: relative; }
+.nav-btn::after {
+    content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px;
+    background-color: #ffffff; transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-btn:hover { color: #ffffff; text-shadow: 0 0 15px rgba(255,255,255,0.4); }
+.nav-btn:hover::after, .nav-btn.active::after { width: 100%; box-shadow: 0 0 10px #ffffff; }
+.nav-btn.active { color: #ffffff; text-shadow: 0 0 15px rgba(255,255,255,0.4); }
+
+/* Button Shine */
+.btn-shine-effect { position: relative; overflow: hidden; }
+.btn-shine-effect::before {
+    content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
+    transform: skewX(-25deg); animation: shine 5s infinite;
+}
