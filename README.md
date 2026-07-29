@@ -7,7 +7,7 @@
 
 *Duelist PVP: The Best third-person combat and community experience on Roblox.*
 
-[🌐 Visit Live Website](https://duelistpvp.lol)
+[🌐 Website](https://duelistpvp.lol)
 
 </div>
 
