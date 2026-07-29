@@ -15,26 +15,3 @@
 
 ### 🚀 About The Project
 Official website for **DuelistPvP**. Built with clean, high-performance modular JavaScript, 3D physics, and Tailwind CSS. Featuring active in-game codes, all map, community highlights, and verified game assets.
-
-### 📂 Project Structure
-```text
-duelistpvp/
-├── index.html
-├── 404.html
-├── CNAME
-├── css/
-│   ├── style.css
-│   ├── components.css
-│   └── animations.css
-├── js/
-│   ├── app.js
-│   ├── navigation.js
-│   ├── tilt.js
-│   ├── toast.js
-│   ├── data.js
-│   ├── render.js
-│   └── title.js
-└── assets/
-    ├── icons/
-    ├── images/
-    └── videos/
