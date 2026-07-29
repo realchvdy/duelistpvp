@@ -3,7 +3,6 @@ let titleIndex = 1;
 let isReversing = false;
 
 function animateTitle() {
-    // Generate typing effect string
     let currentTitle = baseTitle.substring(0, titleIndex);
     if (titleIndex < baseTitle.length && !isReversing) {
         currentTitle += "...";
@@ -14,7 +13,7 @@ function animateTitle() {
         titleIndex++;
         if (titleIndex > baseTitle.length) {
             isReversing = true;
-            setTimeout(animateTitle, 2000); // Wait 2s at full text before reversing
+            setTimeout(animateTitle, 2000); 
             return;
         }
     } else {
@@ -25,8 +24,7 @@ function animateTitle() {
         }
     }
     
-    setTimeout(animateTitle, 250); // Speed of typing effect
+    setTimeout(animateTitle, 250); 
 }
 
-// Start loop
 animateTitle();
