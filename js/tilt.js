@@ -2,7 +2,7 @@ function init3DTilt() {
     const cards = document.querySelectorAll('.tilt-card');
     
     cards.forEach(card => {
-        // Remove old listeners to prevent stacking if function is re-called
+
         const clone = card.cloneNode(true);
         card.parentNode.replaceChild(clone, card);
         
@@ -13,13 +13,11 @@ function init3DTilt() {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
             
-            // Calculate rotation (max 8 degrees for subtleness)
             const rotateX = ((y - centerY) / centerY) * -8;
             const rotateY = ((x - centerX) / centerX) * 8;
             
             clone.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
             
-            // Adjust glare if present
             const glare = clone.querySelector('.glare');
             if (glare) {
                 const glareX = (x / rect.width) * 100;
