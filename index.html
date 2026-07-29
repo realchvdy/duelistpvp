@@ -4,13 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DuelistPvP.lol</title>
-
-  <!-- Favicon Linkage -->
   <link rel="icon" href="assets/icons/favicon.png" type="image/png">
   <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -55,13 +51,10 @@
       }
     }
   </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Modular CSS Imports -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -69,11 +62,8 @@
 <body class="min-h-screen flex flex-col selection:bg-white selection:text-black">
   <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0"></div>
   <div class="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900/20 via-[#000] to-[#000] pointer-events-none z-0"></div>
-
   <header class="sticky top-0 z-50 glass-nav">
     <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 h-[5.5rem] flex items-center justify-between">
-      
-      <!-- Logo -->
       <div class="flex items-center gap-4 cursor-pointer group tilt-card" onclick="switchTab('home')">
         <div class="w-12 h-12 rounded-xl bg-[#0a0a0a] border border-neutral-800 flex items-center justify-center relative overflow-hidden transition-all duration-500 group-hover:border-white group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] tilt-content">
           <i class="fa-solid fa-crosshairs text-xl text-white transition-transform duration-700 group-hover:rotate-180"></i>
@@ -85,8 +75,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Desktop Nav -->
       <nav class="hidden lg:flex items-center gap-9">
         <button onclick="switchTab('home')" data-tab="home" class="nav-btn active text-xs font-bold tracking-[0.15em] uppercase">Home</button>
         <button onclick="switchTab('codes')" data-tab="codes" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase flex items-center gap-1.5">Codes <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_5px_#10b981]"></span></button>
@@ -95,15 +83,11 @@
         <button onclick="switchTab('community')" data-tab="community" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Community</button>
         <button onclick="switchTab('resources')" data-tab="resources" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Resources</button>
         <button onclick="switchTab('credits')" data-tab="credits" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Credits</button>
-        
         <div class="w-px h-5 bg-neutral-800 mx-1"></div>
-        
         <button onclick="switchTab('trading')" data-tab="trading" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase flex items-center gap-2 group/trade text-white">
             <i class="fa-solid fa-arrow-right-arrow-left opacity-60 group-hover/trade:opacity-100 group-hover/trade:rotate-180 transition-all duration-500"></i> Trade
         </button>
       </nav>
-
-      <!-- Mobile Toggle -->
       <div class="flex lg:hidden items-center gap-3">
           <button onclick="switchTab('trading')" class="px-4 py-2 bg-white text-black text-[10px] font-black rounded-lg uppercase tracking-wider shadow-[0_0_10px_rgba(255,255,255,0.2)]">Trade</button>
           <button onclick="toggleMobileMenu()" class="w-10 h-10 rounded-lg bg-[#0a0a0a] border border-neutral-800 flex items-center justify-center text-white hover:border-white transition-all">
@@ -111,8 +95,6 @@
           </button>
       </div>
     </div>
-
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden lg:hidden border-t border-neutral-900 bg-[#000000]/95 backdrop-blur-xl absolute w-full left-0 shadow-2xl z-50">
       <div class="flex flex-col p-4 gap-2">
         <button onclick="switchTab('home')" class="text-left px-4 py-3 rounded-lg text-sm font-bold bg-white text-black">Home</button>
@@ -125,20 +107,15 @@
       </div>
     </div>
   </header>
-
   <main class="flex-1 w-full relative z-10">
-    
-    <!-- TAB: HOME -->
     <section id="tab-home" class="tab-content w-full opacity-0 hidden">
       <div class="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#000000]/50 to-[#000000] z-10"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[150px] pointer-events-none z-0"></div>
         <img src="https://raw.githubusercontent.com/realchvdy/website-assets/refs/heads/main/background.png" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-20 scale-105 pointer-events-none">
-        
         <div class="max-w-[95rem] mx-auto px-4 relative z-20 w-full flex flex-col items-center">
           <div class="relative w-full max-w-5xl flex justify-center tilt-card group" style="transform-style: preserve-3d; perspective: 2000px;">
               <div class="glare rounded-[3rem]"></div>
-              
               <div class="hidden md:flex absolute -left-12 top-10 glass-panel p-3.5 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.9)] animate-float tilt-content backdrop-blur-md items-center gap-3 z-30">
                   <div class="w-10 h-10 rounded-xl bg-cyan-950/30 border border-cyan-900/50 flex items-center justify-center relative">
                       <i class="fa-solid fa-map-location-dot text-cyan-500 relative z-10"></i>
@@ -151,7 +128,6 @@
                     </div>
                   </div>
               </div>
-
               <div class="hidden md:flex absolute -right-16 bottom-20 glass-panel p-3.5 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.9)] animate-float-fast tilt-content backdrop-blur-md items-center gap-3 z-30" style="animation-delay: 1.5s;">
                   <div class="w-10 h-10 rounded-xl bg-white text-black flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                       <i class="fa-solid fa-ticket-simple"></i>
@@ -161,21 +137,17 @@
                     <div class="text-sm font-black font-changa text-white mt-0.5 tracking-wider">Blackmarket!</div>
                   </div>
               </div>
-
               <div class="text-center tilt-content z-20 py-20 w-full">
                   <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-[10px] font-bold uppercase tracking-widest mb-6 shadow-inner backdrop-blur-md hover:bg-white/10 transition-colors cursor-default">
                     <span class="w-2 h-2 rounded-full bg-white animate-pulse shadow-[0_0_10px_#ffffff]"></span>
                     BETA LIVE NOW!
                   </div>
-                  
                   <h1 class="text-[11vw] xl:text-[9rem] font-extrabold font-changa leading-[0.85] tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-500 to-white animate-gradient-x bg-[length:200%_auto] pb-4 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] whitespace-nowrap overflow-visible">
                     DUELIST PVP
                   </h1>
-                  
                   <p class="text-neutral-400 text-sm md:text-lg lg:text-xl font-medium leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-shadow-sm">
                     Master your movement, perfect your aim, and dominate the arena. The ultimate third-person combat experience on Roblox.
                   </p>
-                  
                   <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                     <a href="https://www.roblox.com/games/122310270867133/DUELIST-PvP" target="_blank" class="w-full sm:w-auto btn-shine-effect px-14 py-5 rounded-xl bg-white text-black text-sm font-black transition-all hover:scale-105 flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)] tracking-widest">
                       <i class="fa-solid fa-play"></i> ENTER ARENA
@@ -188,15 +160,12 @@
           </div>
         </div>
       </div>
-
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-30 space-y-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="home-stats-container"></div>
-
         <div class="grid lg:grid-cols-3 gap-6 items-stretch">
           <div class="lg:col-span-2 glass-panel rounded-3xl p-8 md:p-12 cursor-pointer group relative overflow-hidden tilt-card" onclick="switchTab('updates')">
             <div class="glare rounded-3xl"></div>
             <div class="absolute right-0 top-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3 group-hover:bg-white/10 transition-colors duration-700"></div>
-            
             <div class="tilt-content h-full flex flex-col">
                 <div class="flex justify-between items-center mb-10 pb-6 border-b border-white/10">
                   <h2 class="text-xl md:text-2xl font-changa font-black text-white tracking-widest uppercase flex items-center gap-4">
@@ -209,11 +178,9 @@
                     View Archive <i class="fa-solid fa-arrow-right"></i>
                   </span>
                 </div>
-                
                 <div id="home-latest-update" class="flex-1 flex flex-col justify-center"></div>
             </div>
           </div>
-
           <div class="flex flex-col gap-6">
             <div class="glass-panel rounded-3xl p-8 cursor-pointer group flex flex-col justify-center flex-1 relative overflow-hidden tilt-card" onclick="switchTab('resources')">
               <div class="glare rounded-3xl"></div>
@@ -225,7 +192,6 @@
                   <p class="text-xs text-neutral-400 leading-relaxed font-medium">Access verified IDs for the best crosshairs and KillFX audio used by top players.</p>
               </div>
             </div>
-
             <div class="glass-panel rounded-3xl p-8 cursor-pointer group flex flex-col justify-center flex-1 relative overflow-hidden tilt-card" onclick="switchTab('maps')">
               <div class="glare rounded-3xl"></div>
               <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500 bg-[url('https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Nostalgia.png')] bg-cover bg-center"></div>
@@ -241,8 +207,6 @@
         </div>
       </div>
     </section>
-
-    <!-- TAB: CODES -->
     <section id="tab-codes" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
         <div class="flex flex-col items-center text-center mb-20 relative z-10 tilt-card">
@@ -262,8 +226,6 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10" id="codes-container"></div>
       </div>
     </section>
-
-    <!-- TAB: UPDATES -->
     <section id="tab-updates" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="mb-20 text-center tilt-card">
@@ -278,8 +240,6 @@
         </div>
       </div>
     </section>
-
-    <!-- TAB: MAPS -->
     <section id="tab-maps" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="mb-16 pb-10 border-b border-white/10 text-center tilt-card">
@@ -291,8 +251,6 @@
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8" id="maps-container"></div>
       </div>
     </section>
-
-    <!-- TAB: COMMUNITY -->
     <section id="tab-community" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="mb-16 pb-10 border-b border-white/10 text-center tilt-card">
@@ -302,16 +260,11 @@
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="clips-container"></div>
-        
-        <!-- SaaS Style 3D Discord Mockup Banner -->
         <div class="mt-28 relative w-full rounded-[3rem] bg-[#030303] border border-white/10 overflow-hidden shadow-2xl tilt-card group" style="perspective: 1500px;">
           <div class="glare rounded-[3rem]"></div>
           <div class="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
           <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/10 transition-colors duration-1000"></div>
-          
           <div class="relative z-10 flex flex-col lg:flex-row items-center gap-12 p-10 md:p-16 tilt-content">
-              
-              <!-- Left: Content -->
               <div class="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
                   <div class="w-16 h-16 rounded-2xl bg-white text-black flex items-center justify-center text-3xl mb-8 shadow-[0_0_30px_rgba(255,255,255,0.3)]">
                       <i class="fa-brands fa-discord"></i>
@@ -322,15 +275,11 @@
                   <p class="text-neutral-400 text-sm md:text-base max-w-md font-medium leading-relaxed mb-10">
                     Join the official Discord server and submit your best gameplay in the <span class="text-white font-bold bg-white/10 px-1.5 py-0.5 rounded">#highlights</span> channel. The top 6 are featured here every month.
                   </p>
-                  
                   <a href="https://discord.gg/duelistpvp" target="_blank" class="btn-shine-effect px-10 py-5 bg-white text-black text-xs font-black uppercase tracking-[0.2em] rounded-xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)] flex items-center gap-3">
                      JOIN DISCORD SERVER <i class="fa-solid fa-arrow-right"></i>
                   </a>
               </div>
-
-              <!-- Right: 3D Discord Window Mockup -->
               <div class="flex-1 w-full max-w-[32rem] relative group/mockup">
-                  <!-- Floating Msg 1 -->
                   <div class="absolute -left-8 top-10 glass-panel p-3 rounded-xl shadow-2xl z-20 animate-float backdrop-blur-md flex items-center gap-3 border border-white/10">
                       <div class="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center font-bold text-xs text-white">D</div>
                       <div>
@@ -338,17 +287,11 @@
                           <div class="text-[11px] text-neutral-300">Check out this 1v4 clutch! 🔥</div>
                       </div>
                   </div>
-
-                  <!-- Mockup Window -->
                   <div class="w-full bg-[#1e1f22] border border-[#111] rounded-2xl shadow-[0_30px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-transform duration-700 ease-out transform rotate-y-[-12deg] rotate-x-[6deg] group-hover/mockup:rotate-y-0 group-hover/mockup:rotate-x-0">
-                      
-                      <!-- Discord Header -->
                       <div class="bg-[#2b2d31] border-b border-[#1e1f22] px-4 py-3 flex items-center gap-3">
                           <i class="fa-solid fa-hashtag text-neutral-400 text-lg"></i>
                           <div class="text-sm font-bold text-white tracking-wide">highlights</div>
                       </div>
-                      
-                      <!-- Discord Body -->
                       <div class="p-6 flex flex-col gap-5 bg-[#313338] min-h-[250px]">
                           <div class="flex gap-4">
                               <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center shrink-0">
@@ -371,8 +314,6 @@
         </div>
       </div>
     </section>
-
-    <!-- TAB: RESOURCES -->
     <section id="tab-resources" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="mb-16 pb-10 border-b border-white/10 text-center tilt-card">
@@ -381,7 +322,6 @@
                 <p class="text-neutral-400 mt-4 text-sm md:text-base font-medium max-w-2xl mx-auto">Enhance your gameplay with verified IDs for the best crosshairs and KillFX audio used by competitive players.</p>
             </div>
         </div>
-
         <div class="grid lg:grid-cols-2 gap-8 items-start">
           <div class="glass-panel rounded-3xl p-8 md:p-10 flex flex-col tilt-card group h-[500px]">
             <div class="glare rounded-3xl"></div>
@@ -398,7 +338,6 @@
                 <div class="flex flex-col gap-3 flex-1" id="crosshairs-container"></div>
             </div>
           </div>
-
           <div class="glass-panel rounded-3xl p-8 md:p-10 flex flex-col relative overflow-hidden h-[500px] border-white/5 tilt-card group">
             <div class="glare rounded-3xl"></div>
             <div class="absolute inset-0 bg-dot-pattern opacity-10"></div>
@@ -417,8 +356,6 @@
         </div>
       </div>
     </section>
-
-    <!-- TAB: CREDITS -->
     <section id="tab-credits" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="mb-20 text-center tilt-card">
@@ -430,44 +367,32 @@
         <div id="staff-container" class="space-y-20"></div>
       </div>
     </section>
-
-    <!-- TAB: TRADING -->
     <section id="tab-trading" class="tab-content w-full opacity-0 hidden">
       <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
         <div class="absolute top-[10%] right-[5%] w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none z-0"></div>
         <div class="absolute bottom-[10%] left-[5%] w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
-
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-32 relative z-10">
           <div class="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0a0a0a] border border-white/10 text-white text-[10px] font-bold uppercase tracking-widest mb-8 shadow-inner">
               <span class="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_#10b981]"></span>
               Official Companion App
             </div>
-            
             <h1 class="text-5xl md:text-7xl lg:text-[6rem] font-extrabold font-changa tracking-tighter text-white mb-6 leading-[0.85]">
               MASTER THE <br/>
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-white to-neutral-500">MARKET.</span>
             </h1>
-            
             <p class="text-neutral-400 text-sm md:text-base max-w-lg leading-relaxed mb-12 font-medium">
               Never take a bad trade again. Access live community-driven values, build flawless offers with our smart calculator, and connect securely with verified middlemen.
             </p>
-            
             <a href="https://www.duelisttrading.lol/" target="_blank" class="group/btn relative inline-flex items-center justify-center px-12 py-5 font-black text-black bg-white rounded-xl hover:bg-neutral-200 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] tracking-[0.2em] text-xs uppercase overflow-hidden">
               <span class="relative z-10 flex items-center gap-3">
                 ENTER TRADING HUB <i class="fa-solid fa-arrow-right-long group-hover/btn:translate-x-1 transition-transform"></i>
               </span>
             </a>
           </div>
-
-          <!-- Right Content: Animated 3D App Mockup -->
           <div class="flex-1 w-full lg:w-[60%] lg:min-w-[45rem] relative tilt-card" style="perspective: 2500px;">
              <div class="tilt-content animate-float">
-                 
-                 <!-- Main Mockup Window (SMART CALC) -->
                  <div class="w-full bg-[#030303] border border-white/10 rounded-3xl shadow-[0_40px_80px_rgba(0,0,0,0.8)] overflow-hidden transition-transform duration-700 ease-out">
-                    
-                    <!-- Calc Header -->
                     <div class="bg-[#0a0a0a] border-b border-white/5 px-6 py-5 flex items-center justify-between">
                        <div class="flex items-center gap-3">
                           <div class="w-8 h-8 rounded-lg bg-white text-black flex items-center justify-center text-sm shadow-[0_0_15px_rgba(255,255,255,0.3)]">
@@ -484,14 +409,9 @@
                            </button>
                        </div>
                     </div>
-                    
-                    <!-- Calc Body (3 Columns) -->
                     <div class="p-4 md:p-6 flex flex-col lg:flex-row gap-4 bg-[#050505]">
-                        
-                        <!-- Column 1: YOUR OFFER -->
                         <div class="flex-[1.2] bg-[#0a0a0a] border border-white/5 rounded-2xl p-4 md:p-5 relative flex flex-col shadow-inner">
                             <div class="absolute left-0 top-6 bottom-6 w-1 bg-white rounded-r-md shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                            
                             <div class="pl-3 flex justify-between items-start mb-6">
                                 <div>
                                     <h3 class="text-white font-changa font-black text-sm md:text-base uppercase tracking-wider drop-shadow-md">Your Offer</h3>
@@ -504,9 +424,7 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="grid grid-cols-2 gap-3 flex-1 pl-3">
-                                <!-- Item: Exclusive -->
                                 <div class="bg-[#0f0f0f] border border-orange-900/30 rounded-xl p-3 flex flex-col justify-between hover:border-orange-500/30 transition-colors cursor-pointer group/item">
                                     <div class="flex justify-between items-center mb-3">
                                         <div class="bg-black border border-white/10 rounded flex items-center text-[9px] text-white overflow-hidden shadow-inner">
@@ -524,8 +442,6 @@
                                         <span class="text-orange-400 text-[10px] font-bold flex items-center gap-1 shrink-0">220K <i class="fa-solid fa-gem text-[8px]"></i></span>
                                     </div>
                                 </div>
-
-                                <!-- Item: Exclusive 2 -->
                                 <div class="bg-[#0f0f0f] border border-orange-900/30 rounded-xl p-3 flex flex-col justify-between hover:border-orange-500/30 transition-colors cursor-pointer group/item">
                                     <div class="flex justify-between items-center mb-3">
                                         <div class="bg-black border border-white/10 rounded flex items-center text-[9px] text-white overflow-hidden shadow-inner">
@@ -543,8 +459,6 @@
                                         <span class="text-orange-400 text-[10px] font-bold flex items-center gap-1 shrink-0">150K <i class="fa-solid fa-gem text-[8px]"></i></span>
                                     </div>
                                 </div>
-
-                                <!-- Item: Mythic -->
                                 <div class="bg-[#0f0f0f] border border-pink-900/40 rounded-xl p-3 flex flex-col justify-between hover:border-pink-500/40 transition-colors cursor-pointer shadow-[inset_0_0_20px_rgba(236,72,153,0.03)] group/item">
                                     <div class="flex justify-between items-center mb-3">
                                         <div class="bg-black border border-white/10 rounded flex items-center text-[9px] text-white overflow-hidden shadow-inner">
@@ -562,13 +476,10 @@
                                         <span class="text-pink-400 text-[10px] font-bold flex items-center gap-1 shrink-0">50K <i class="fa-solid fa-gem text-[8px]"></i></span>
                                     </div>
                                 </div>
-
-                                <!-- Empty Slot -->
                                 <div class="bg-[#080808] border border-dashed border-white/10 rounded-xl flex items-center justify-center h-full min-h-[6rem] hover:border-white/30 transition-colors cursor-pointer group/add">
                                     <i class="fa-solid fa-plus text-neutral-700 text-lg group-hover/add:scale-125 group-hover/add:text-white transition-all"></i>
                                 </div>
                             </div>
-
                             <div class="pl-3 mt-6 flex justify-between items-center">
                                 <span class="text-neutral-500 text-[8px] font-bold uppercase tracking-widest">Avg Demand</span>
                                 <div class="flex gap-1">
@@ -579,22 +490,15 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="w-full lg:w-40 bg-[#060c08] border border-emerald-900/30 rounded-2xl p-5 flex flex-col items-center justify-center relative overflow-hidden shrink-0 shadow-[0_0_30px_rgba(16,185,129,0.05)]">
-
                             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-emerald-500/20 blur-[30px] rounded-full pointer-events-none animate-pulse-slow"></div>
-
                             <span class="text-neutral-400 text-[8px] font-black uppercase tracking-[0.2em] bg-black/60 px-3 py-1.5 rounded-full border border-white/5 mb-8 relative z-10 text-center w-full shadow-inner backdrop-blur-md">Live Evaluation</span>
-                            
                             <div class="w-16 h-16 rounded-full bg-emerald-400 flex items-center justify-center text-black text-3xl shadow-[0_0_30px_rgba(52,211,153,0.5)] mb-6 relative z-10">
                                 <i class="fa-solid fa-arrow-trend-up"></i>
                             </div>
-
                             <div class="w-full bg-emerald-400 text-black text-xs font-black text-center py-3 rounded-lg uppercase tracking-[0.2em] mb-6 relative z-10 shadow-[0_0_20px_rgba(52,211,153,0.3)]">
                                 Win
                             </div>
-
                             <div class="w-full bg-[#030303] border border-white/5 rounded-xl p-3 flex flex-col gap-3.5 relative z-10 shadow-inner">
                                 <div class="flex justify-between items-center">
                                     <span class="text-neutral-500 text-[8px] font-bold uppercase tracking-widest">Difference</span>
@@ -610,11 +514,8 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="flex-[1.2] bg-[#0a0a0a] border border-white/5 rounded-2xl p-4 md:p-5 relative flex flex-col shadow-inner">
                             <div class="absolute right-0 top-6 bottom-6 w-1 bg-white rounded-l-md shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                            
                             <div class="pr-3 flex justify-between items-start mb-6">
                                 <div>
                                     <h3 class="text-white font-changa font-black text-sm md:text-base uppercase tracking-wider drop-shadow-md">Their Offer</h3>
@@ -627,9 +528,7 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="grid grid-cols-2 gap-3 flex-1 pr-3">
-                                <!-- Item: Hyper -->
                                 <div class="bg-[#0f0f0f] border border-cyan-900/40 rounded-xl p-3 flex flex-col justify-between hover:border-cyan-500/40 transition-colors cursor-pointer shadow-[inset_0_0_20px_rgba(6,182,212,0.03)] group/item">
                                     <div class="flex justify-between items-center mb-3">
                                         <div class="bg-black border border-white/10 rounded flex items-center text-[9px] text-white overflow-hidden shadow-inner">
@@ -648,7 +547,6 @@
                                         <span class="text-cyan-400 text-[10px] font-bold flex items-center gap-1 shrink-0">450K <i class="fa-solid fa-gem text-[8px]"></i></span>
                                     </div>
                                 </div>
-
                                 <div class="bg-[#080808] border border-dashed border-white/10 rounded-xl flex items-center justify-center h-full min-h-[6rem] hover:border-white/30 transition-colors cursor-pointer group/add">
                                     <i class="fa-solid fa-plus text-neutral-700 text-lg group-hover/add:scale-125 group-hover/add:text-white transition-all"></i>
                                 </div>
@@ -659,7 +557,6 @@
                                     <i class="fa-solid fa-plus text-neutral-700 text-lg group-hover/add:scale-125 group-hover/add:text-white transition-all"></i>
                                 </div>
                             </div>
-
                             <div class="pr-3 mt-6 flex justify-between items-center">
                                 <span class="text-neutral-500 text-[8px] font-bold uppercase tracking-widest">Avg Demand</span>
                                 <div class="flex gap-1">
@@ -670,15 +567,12 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                  </div>
              </div>
           </div>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-          
           <div class="bg-[#050505] border border-white/5 rounded-3xl p-8 flex flex-col items-start hover:bg-[#0a0a0a] hover:border-white/10 transition-all duration-300">
             <div class="w-12 h-12 rounded-xl bg-white text-black flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
               <i class="fa-solid fa-chart-line text-lg"></i>
@@ -686,9 +580,7 @@
             <h3 class="font-bold font-changa text-white text-xl uppercase tracking-widest mb-2">Live Analytics</h3>
             <p class="text-sm text-neutral-500 font-medium leading-relaxed">Track real-time market fluctuations, view historical trend charts, and analyze item demand.</p>
           </div>
-
           <div class="bg-[#050505] border border-emerald-900/20 rounded-3xl p-8 flex flex-col items-start hover:bg-[#0a0a0a] hover:border-emerald-500/30 transition-all duration-300 relative overflow-hidden group">
-
             <div class="absolute inset-0 bg-emerald-500/0 group-hover:bg-emerald-500/5 transition-colors duration-500 pointer-events-none"></div>
             <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 flex items-center justify-center mb-6 shadow-inner">
               <i class="fa-solid fa-scale-balanced text-lg"></i>
@@ -696,7 +588,6 @@
             <h3 class="font-bold font-changa text-white text-xl uppercase tracking-widest mb-2">Smart Calculator</h3>
             <p class="text-sm text-neutral-500 font-medium leading-relaxed">Build complex multi-item offers and guarantee perfect profit margins on every single trade.</p>
           </div>
-
           <div class="bg-[#050505] border border-white/5 rounded-3xl p-8 flex flex-col items-start hover:bg-[#0a0a0a] hover:border-white/10 transition-all duration-300">
             <div class="w-12 h-12 rounded-xl bg-white text-black flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
               <i class="fa-solid fa-shield-halved text-lg"></i>
@@ -704,21 +595,15 @@
             <h3 class="font-bold font-changa text-white text-xl uppercase tracking-widest mb-2">Verified Hubs</h3>
             <p class="text-sm text-neutral-500 font-medium leading-relaxed">Join secure, moderated private servers with official middleman support for safe high-tier trading.</p>
           </div>
-
         </div>
-
       </div>
     </section>
-
   </main>
-
   <footer class="border-t border-white/10 bg-[#000000] pt-20 pb-10 mt-auto relative z-40 overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[30%] h-[200px] bg-white/5 blur-[100px] rounded-full pointer-events-none"></div>
-    
     <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-white/5 pb-16">
-            
             <div class="md:col-span-5 flex flex-col items-start">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.3)]">
@@ -738,7 +623,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="md:col-span-4 md:pl-10">
                 <h4 class="text-white font-changa font-black text-base mb-6 tracking-[0.2em] uppercase">Directory</h4>
                 <ul class="space-y-4 text-sm font-medium text-neutral-500">
@@ -748,7 +632,6 @@
                     <li><button onclick="switchTab('maps')" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-white/20"></span> Arena Maps</button></li>
                 </ul>
             </div>
-
             <div class="md:col-span-3">
                 <h4 class="text-white font-changa font-black text-base mb-6 tracking-[0.2em] uppercase">Platform</h4>
                 <ul class="space-y-4 text-sm font-medium text-neutral-500">
@@ -758,9 +641,7 @@
                     <li><button onclick="switchTab('credits')" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-white/20"></span> Staff Credits</button></li>
                 </ul>
             </div>
-            
         </div>
-        
         <div class="mt-8 text-center text-[10px] text-neutral-600 font-bold uppercase tracking-widest flex flex-col md:flex-row justify-center items-center gap-2">
             <p>&copy; 2026 DuelistPvP. All rights reserved.</p>
             <span class="hidden md:inline text-neutral-800">|</span>
@@ -768,9 +649,7 @@
         </div>
     </div>
   </footer>
-
   <div id="toast-container" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
-
   <script src="js/data.js"></script>
   <script src="js/title.js"></script>
   <script src="js/toast.js"></script>
