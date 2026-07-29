@@ -1,4 +1,3 @@
-/* 3D Tilt Card Physics Engine Styling */
 .tilt-card {
     transform-style: preserve-3d;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
