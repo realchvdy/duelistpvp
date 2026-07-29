@@ -1,6 +1,3 @@
-// ==========================================
-// RENDER FUNCTIONS
-// ==========================================
 
 function renderHome() {
     const statsContainer = document.getElementById('home-stats-container');
@@ -190,7 +187,6 @@ function renderMaps() {
 function renderClips() {
     const container = document.getElementById('clips-container');
     
-    // Render Empty State if no clips available
     if (DB_CLIPS.length === 0) {
         container.classList.remove('md:grid-cols-2', 'lg:grid-cols-3');
         container.innerHTML = `
@@ -208,7 +204,6 @@ function renderClips() {
         return;
     }
 
-    // Render Clips if available
     container.classList.add('md:grid-cols-2', 'lg:grid-cols-3');
     container.innerHTML = DB_CLIPS.map((clip, index) => {
         let rankBadge = '';
@@ -256,7 +251,6 @@ function renderClips() {
 function renderAssets() {
     const container = document.getElementById('crosshairs-container');
 
-    // Render Empty State if no crosshairs available
     if (DB_CROSSHAIRS.length === 0) {
         container.innerHTML = `
             <div class="bg-[#050505] rounded-2xl border border-white/5 border-dashed p-10 flex flex-col items-center justify-center text-center group hover:border-white/20 transition-colors duration-500 shadow-inner h-full min-h-[250px]">
