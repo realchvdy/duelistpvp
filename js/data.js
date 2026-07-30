@@ -187,15 +187,14 @@ const DB_UPDATES = [
 ];
 
 const DB_CODES = [
-    { code: "Blackmarket!", reward: "text1", status: "Active" },
-    { code: "thanksfor9mvisits!!", reward: "text1", status: "Active" },
-    { code: "big16klikes", reward: "text1", status: "Active" },
-    { code: "STAYPOSITIVE", reward: "text1", status: "Active" },
-    { code: "5000likes!", reward: "text1", status: "Active" },
-    { code: "thanksfor2MVisits!", reward: "text1", status: "Active" },
-    { code: "6klikeswhaaat?", reward: "text1", status: "Active" },
-    { code: "Sorry4Delay", reward: "text1", status: "Active" },
-    { code: "MATCHMAKING!", reward: "text1", status: "Active" }
+    { code: "Blackmarket!", reward: "2x Money for 30 minutes!", status: "Active" },
+    { code: "10M!", reward: "2x Money for 30 minutes!", status: "Active" },
+    { code: "APPISTOL!", reward: "10,000 Credits!", status: "Active" },
+    { code: "wowie", reward: "5 Lucky Player Spins!", status: "Active" },
+    { code: "10kccuhow", reward: "1x untradable pogo pack!", status: "Active" },
+    { code: "SUMMERTIME", reward: "1x red quartz gun skin!", status: "Active" },
+    { code: "Sorry4Delay", reward: "5 Lucky Player Spins!", status: "Active" },
+    { code: "MATCHMAKING!", reward: "2x Money for 30 minutes!", status: "Active" }
 ];
 
 const DB_MAPS = [
