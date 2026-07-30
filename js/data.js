@@ -211,17 +211,17 @@ const DB_MAPS = [
 
 const DB_STAFF = [
     { roleCat: "Website Developer", members: [
-    { name: "@realchvdy", role: "Web Developer", desc: "Architect of the DuelistPvP web hub and trading platform.", avatar: "R" }
+    { name: "@realchvdy", role: " Lead Website Developer", desc: "Single-handedly designed, built, and maintains the entire DuelistPvP website.", avatar: "R" }
     ]},
     { roleCat: "Game Developers", members: [
-    { name: "@ogkabus", role: "Game Developer", desc: "Core game mechanics and programming.", avatar: "O" },
-    { name: "@wesiient", role: "Game Developer", desc: "Core game mechanics and programming.", avatar: "W" },
-    { name: "@diedv", role: "Game Developer", desc: "Core game mechanics and programming.", avatar: "D" }
+    { name: "@ogkabus", role: "Lead Scripter", desc: "Main programmer in charge of core gameplay scripting and system logic.", avatar: "O" },
+    { name: "@wesiient", role: "3D Artist & UI Designer", desc: "Responsible for 3D modeling, map building, and UI design.", avatar: "W" },
+    { name: "@diedv", role: "Audio Engineer", desc: "Creates and engineers all custom in-game sound effects.", avatar: "D" }
     ]},
     { roleCat: "Managers", members: [
-    { name: "@plastek", role: "Manager", desc: "Community operations and team management.", avatar: "P" },
-    { name: "@6qw", role: "Manager", desc: "Community operations and team management.", avatar: "6" },
-    { name: "@ognores", role: "Manager", desc: "Community operations and team management.", avatar: "O" }
+    { name: "@plastek", role: "Head Manager", desc: "Head manager overseeing community operations and staff.", avatar: "P" },
+    { name: "@6qw", role: "Media Manager", desc: "Manages communication with content creators.", avatar: "6" },
+    { name: "@ognores", role: "Testing Manager", desc: "Coordinates the testing team and bug reporting.", avatar: "O" }
     ]},
     { roleCat: "Senior Staff", members: [
     { name: "@6luxed", role: "Senior Staff", desc: "Advanced community moderation.", avatar: "6" },
