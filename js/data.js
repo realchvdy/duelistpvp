@@ -204,7 +204,7 @@ const DB_MAPS = [
     { name: "Chess", desc: "A tactical battleground set on a giant chessboard. Plan your moves carefully and control the center.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Chess.png" },
     { name: "DueGunz", desc: "An intense urban shootout arena designed for fast-paced movement and rapid crossfire.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/DueGuns.png" },
     { name: "Chicken Factory", desc: "A quirky but deadly processing plant. Don't let the scenery distract you from the angles.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Chicken%20Factory.png" },
-    { name: "Factory", desc: "A massive industrial complex offering a mix of close-quarters and long-range tactical combat.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Factory.png" },
+    { name: "Night Shift", desc: "A massive industrial complex offering a mix of close-quarters and long-range tactical combat.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Factory.png" },
     { name: "Roof", desc: "High altitude combat with massive verticality and perilous drops. Watch your step.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Roof.png" },
     { name: "Boxyard", desc: "A maze of shipping containers providing endless flanking routes and sudden, close encounters.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/BoxYard.png" }
 ];
@@ -215,13 +215,13 @@ const DB_STAFF = [
     ]},
     { roleCat: "Game Developers", members: [
     { name: "@ogkabus", role: "Game Developer", desc: "Core game mechanics and programming.", avatar: "O" },
-    { name: "@wesiient", role: "Game Developer", desc: "Systems and backend architecture.", avatar: "W" },
-    { name: "@diedv", role: "Game Developer", desc: "Environment, UI, and gameplay design.", avatar: "D" }
+    { name: "@wesiient", role: "Game Developer", desc: "Core game mechanics and programming.", avatar: "W" },
+    { name: "@diedv", role: "Game Developer", desc: "Core game mechanics and programming.", avatar: "D" }
     ]},
     { roleCat: "Managers", members: [
     { name: "@plastek", role: "Manager", desc: "Community operations and team management.", avatar: "P" },
-    { name: "@6qw", role: "Manager", desc: "Platform moderation and events.", avatar: "6" },
-    { name: "@ognores", role: "Manager", desc: "Staff coordination and user relations.", avatar: "O" }
+    { name: "@6qw", role: "Manager", desc: "Community operations and team management.", avatar: "6" },
+    { name: "@ognores", role: "Manager", desc: "Community operations and team management.", avatar: "O" }
     ]},
     { roleCat: "Senior Staff", members: [
     { name: "@6luxed", role: "Senior Staff", desc: "Advanced community moderation.", avatar: "6" },
