@@ -199,14 +199,14 @@ const DB_CODES = [
 ];
 
 const DB_MAPS = [
-    { name: "Nostalgia", desc: "A classic arena bringing back the oldest memories of combat. Tight corners and familiar sightlines.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Nostalgia.png" },
-    { name: "DueFuel", desc: "Fight around volatile fuel tanks and industrial piping. High risk, high reward engagements.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/DueFuel.png" },
-    { name: "Chess", desc: "A tactical battleground set on a giant chessboard. Plan your moves carefully and control the center.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Chess.png" },
-    { name: "DueGunz", desc: "An intense urban shootout arena designed for fast-paced movement and rapid crossfire.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/DueGuns.png" },
-    { name: "Chicken Factory", desc: "A quirky but deadly processing plant. Don't let the scenery distract you from the angles.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Chicken%20Factory.png" },
-    { name: "Night Shift", desc: "A massive industrial complex offering a mix of close-quarters and long-range tactical combat.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Factory.png" },
-    { name: "Roof", desc: "High altitude combat with massive verticality and perilous drops. Watch your step.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/Roof.png" },
-    { name: "Boxyard", desc: "A maze of shipping containers providing endless flanking routes and sudden, close encounters.", image: "https://raw.githubusercontent.com/realchvdy/website-assets/5bf82a91d8b14116c90bbf70d2376ebcd80b54c1/BoxYard.png" }
+    { name: "Nostalgia", desc: "A classic arena bringing back the oldest memories of combat. Tight corners and familiar sightlines.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/Nostalgia.png" },
+    { name: "DueFuel", desc: "Fight around volatile fuel tanks and industrial piping. High risk, high reward engagements.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/DueFuel.png" },
+    { name: "Chess", desc: "A tactical battleground set on a giant chessboard. Plan your moves carefully and control the center.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/Chess.png" },
+    { name: "DueGunz", desc: "An intense urban shootout arena designed for fast-paced movement and rapid crossfire.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/DueGuns.png" },
+    { name: "Chicken Factory", desc: "A quirky but deadly processing plant. Don't let the scenery distract you from the angles.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/Chicken%20Factory.png" },
+    { name: "Night Shift", desc: "A massive industrial complex offering a mix of close-quarters and long-range tactical combat.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/NightShift.png" },
+    { name: "Roof", desc: "High altitude combat with massive verticality and perilous drops. Watch your step.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/Roof.png" },
+    { name: "Boxyard", desc: "A maze of shipping containers providing endless flanking routes and sudden, close encounters.", image: "https://raw.githubusercontent.com/realchvdy/duelistpvp/refs/heads/main/assets/images/maps/BoxYard.png" }
 ];
 
 const DB_STAFF = [
