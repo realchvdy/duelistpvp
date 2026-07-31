@@ -84,12 +84,12 @@
         <button onclick="switchTab('resources')" data-tab="resources" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Resources</button>
         <button onclick="switchTab('credits')" data-tab="credits" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase">Credits</button>
         <div class="w-px h-5 bg-neutral-800 mx-1"></div>
-        <button onclick="switchTab('trading')" data-tab="trading" class="nav-btn text-xs font-bold tracking-[0.15em] uppercase flex items-center gap-2 group/trade text-white">
-            <i class="fa-solid fa-arrow-right-arrow-left opacity-60 group-hover/trade:opacity-100 group-hover/trade:rotate-180 transition-all duration-500"></i> Trade
-        </button>
+        <a href="#" onclick="event.preventDefault();" class="text-xs font-bold tracking-[0.15em] uppercase flex items-center gap-2 text-white/40 cursor-not-allowed">
+            <i class="fa-solid fa-arrow-right-arrow-left opacity-40"></i> SOON
+        </a>
       </nav>
       <div class="flex lg:hidden items-center gap-3">
-          <button onclick="switchTab('trading')" class="px-4 py-2 bg-white text-black text-[10px] font-black rounded-lg uppercase tracking-wider shadow-[0_0_10px_rgba(255,255,255,0.2)]">Trade</button>
+          <button class="px-4 py-2 bg-white/10 text-white/50 text-[10px] font-black rounded-lg uppercase tracking-wider cursor-not-allowed">SOON</button>
           <button onclick="toggleMobileMenu()" class="w-10 h-10 rounded-lg bg-[#0a0a0a] border border-neutral-800 flex items-center justify-center text-white hover:border-white transition-all">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -152,9 +152,9 @@
                     <a href="https://www.roblox.com/games/122310270867133/DUELIST-PvP" target="_blank" class="w-full sm:w-auto btn-shine-effect px-14 py-5 rounded-xl bg-white text-black text-sm font-black transition-all hover:scale-105 flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)] tracking-widest">
                       <i class="fa-solid fa-play"></i> ENTER ARENA
                     </a>
-                    <button onclick="switchTab('trading')" class="w-full sm:w-auto px-10 py-5 rounded-xl glass-panel hover:border-white hover:bg-white/5 text-white text-sm font-black transition-all flex items-center justify-center gap-3 hover:scale-105 shadow-xl tracking-widest">
-                      <i class="fa-solid fa-scale-balanced text-neutral-400"></i> TRADING HUB
-                    </button>
+                    <a href="https://discord.gg/duelistpvp" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-5 rounded-xl glass-panel hover:border-indigo-500 hover:bg-indigo-500/10 text-white text-sm font-black transition-all flex items-center justify-center gap-3 hover:scale-105 shadow-xl tracking-widest">
+                      <i class="fa-brands fa-discord text-indigo-400 text-lg"></i> DISCORD SERVER
+                    </a>
                   </div>
               </div>
           </div>
