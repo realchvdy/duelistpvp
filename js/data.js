@@ -5,6 +5,22 @@ const DB_STATS = {
 };
 
 const DB_UPDATES = [
+      {
+    id: 10,
+    title: "Update — 07/31/2026",
+    date: "July 31, 2026",
+    version: "LATEST",
+    notes_add: [
+        "Added Sounds/Tracers to Diamond Bundle",
+        "Added FFA gamemode",
+        "Added Breakable Glasses",
+        "Added New Undead Bundle"
+    ],
+    notes_fix: [
+        "Fire Bundle is tradable now",
+        "Fixed a lot of bugs"
+    ]
+    },
     {
     id: 9,
     title: "Update — 07/24/2026",
@@ -187,14 +203,12 @@ const DB_UPDATES = [
 ];
 
 const DB_CODES = [
-    { code: "Blackmarket!", reward: "2x Money for 30 minutes!", status: "Active" },
-    { code: "10M!", reward: "2x Money for 30 minutes!", status: "Active" },
+    { code: "12Mvisits!", reward: "2x money Boost for 30 minutes!", status: "Active" },
+    { code: "18klikessss", reward: "5 Lucky Player Spins!", status: "Active" },
+    { code: "FFA!", reward: "20,000 Credits!", status: "Active" },
     { code: "APPISTOL!", reward: "10,000 Credits!", status: "Active" },
     { code: "wowie", reward: "5 Lucky Player Spins!", status: "Active" },
-    { code: "10kccuhow", reward: "1x untradable pogo pack!", status: "Active" },
-    { code: "SUMMERTIME", reward: "1x red quartz gun skin!", status: "Active" },
-    { code: "Sorry4Delay", reward: "5 Lucky Player Spins!", status: "Active" },
-    { code: "MATCHMAKING!", reward: "2x Money for 30 minutes!", status: "Active" }
+    { code: "SUMMERTIME", reward: "1x red quartz gun skin!", status: "Active" }
 ];
 
 const DB_MAPS = [
@@ -223,19 +237,18 @@ const DB_STAFF = [
     { name: "@ognores", role: "Testing Manager", desc: "Coordinates the testing team and bug reporting.", avatar: "O" }
     ]},
     { roleCat: "Senior Staff", members: [
-    { name: "@6luxed", role: "Senior Staff", desc: "Advanced community moderation.", avatar: "6" },
+    { name: "@fierc9", role: "Senior Staff", desc: "Advanced community moderation.", avatar: "6" },
     { name: "@vpnloop", role: "Senior Staff", desc: "Advanced community moderation.", avatar: "V" },
-    { name: "@vluxvsss", role: "Senior Staff", desc: "Advanced community moderation.", avatar: "V" }
     ]},
     { roleCat: "Staff", members: [
-    { name: "@brejdon", role: "Staff", desc: "Official community moderator.", avatar: "B" },
-    { name: "@8ux5", role: "Staff", desc: "Official community moderator.", avatar: "8" },
+    { name: "@d.boyy", role: "Staff", desc: "Official community moderator.", avatar: "B" },
+    { name: "@dominio1w7.", role: "Staff", desc: "Official community moderator.", avatar: "8" },
     { name: "@uzhf", role: "Staff", desc: "Official community moderator.", avatar: "U" },
-    { name: "@swistk", role: "Staff", desc: "Official community moderator.", avatar: "S" },
-    { name: "@fierc8", role: "Staff", desc: "Official community moderator.", avatar: "F" },
-    { name: "@canthurtmyego", role: "Staff", desc: "Official community moderator.", avatar: "C" },
-    { name: "@06kve", role: "Staff", desc: "Official community moderator.", avatar: "0" },
-    { name: "@barce7", role: "Staff", desc: "Official community moderator.", avatar: "B" }
+    { name: "@barce7", role: "Staff", desc: "Official community moderator.", avatar: "F" },
+    { name: "@xenzpr", role: "Staff", desc: "Official community moderator.", avatar: "C" },
+    { name: "@srryilarp", role: "Staff", desc: "Official community moderator.", avatar: "0" },
+    { name: "@leekgp", role: "Staff", desc: "Official community moderator.", avatar: "B" },
+    { name: "@06kve", role: "Staff", desc: "Official community moderator.", avatar: "S" }
     ]}
 ];
 
