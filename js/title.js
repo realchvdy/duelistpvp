@@ -5,7 +5,6 @@ let isReversing = false;
 function animateTitle() {
     let currentTitle = baseTitle.substring(0, titleIndex);
     if (titleIndex < baseTitle.length && !isReversing) {
-        currentTitle += "...";
     }
     document.title = currentTitle;
     
