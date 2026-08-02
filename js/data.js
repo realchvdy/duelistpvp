@@ -25,7 +25,7 @@ const DB_UPDATES = [
     id: 9,
     title: "Update — 07/24/2026",
     date: "July 24, 2026",
-    version: "LATEST",
+    version: "UPDATE",
     notes_add: [
         "Added Exists to the skins",
         "Added NEW Gun AP PISTOL",
